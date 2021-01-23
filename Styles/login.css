@@ -1,0 +1,567 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+input {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*********************************************************************Navbar******************************************************************/
+
+#nav-bar {
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+
+.current {
+    background-color: rgb(10, 70, 160);
+}
+
+.navbar-nav li {
+    padding: 0px 10px;
+}
+
+.navbar-nav li a {
+    float: right;
+    text-align: left;
+}
+
+#nav-bar ul li a:hover {
+    color: #ffffff!important;
+}
+
+.navbar {
+    background: rgba(250, 250, 250, 0.541);
+}
+
+.navbar-toggler {
+    border: none!important;
+}
+
+.nav-link {
+    color: rgb(236, 225, 225)!important;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+
+/******************************************************************icons**********************************************************************/
+
+.icons-bar {
+    display: block;
+    cursor: pointer;
+    width: 10%;
+}
+
+.whatsapp-icon img {
+    position: fixed;
+    z-index: 4;
+    cursor: pointer;
+}
+
+.insta-icon img {
+    position: fixed;
+    z-index: 4;
+    cursor: pointer;
+}
+
+.fb-icon img {
+    position: fixed;
+    z-index: 4;
+    cursor: pointer;
+}
+
+.yt-icon img {
+    position: fixed;
+    z-index: 4;
+    cursor: pointer;
+}
+
+.whatsapp-icon img:hover {
+    width: 3%;
+    transform: translateY(-9px);
+}
+
+.insta-icon img:hover {
+    width: 3%;
+    transform: translateY(-9px);
+}
+
+.fb-icon img:hover {
+    width: 3%;
+    transform: translateY(-9px);
+}
+
+.yt-icon img:hover {
+    width: 3%;
+    transform: translateY(-9px);
+}
+
+
+/***************************************************************Login Form*******************************************************/
+
+.containor {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+    overflow: hidden;
+}
+
+.containor::before {
+    content: '';
+    position: absolute;
+    width: 2000px;
+    height: 2000px;
+    border-radius: 50%;
+    background: linear-gradient(-45deg, rgb(10, 70, 160), rgb(30, 118, 250));
+    top: -10%;
+    right: 46%;
+    transform: translateY(-50%);
+    z-index: 6;
+}
+
+.forms-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 75%;
+}
+
+.login {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    z-index: 3;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.login-form {
+    z-index: 2;
+}
+
+.title {
+    font-size: 36px;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.input-field {
+    max-width: 380px;
+    width: 100%;
+    height: 55px;
+    background-color: rgba(182, 182, 182, 0.378);
+    margin: 10px 0;
+    border-radius: 50px;
+    display: flex;
+    grid-template-columns: 15% 85%;
+    padding: 0;
+}
+
+.input-field i {
+    text-align: center;
+    line-height: 55px;
+    margin-left: 10px;
+    margin-right: 6px;
+    color: rgba(111, 109, 109, 0.939);
+    font-size: 25px;
+}
+
+.input-field input {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.input-field input::placeholder {
+    color: rgba(165, 164, 164, 0.871);
+    font-weight: 500;
+}
+
+.btn {
+    width: 150px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: rgb(30, 118, 250);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background-color: rgb(10, 70, 160);
+}
+
+.panel-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: -15%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    pointer-events: all;
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    text-align: center;
+    z-index: 6;
+    pointer-events: none;
+}
+
+.panel h3 {
+    position: absolute;
+    font-weight: 600;
+    line-height: 1;
+    font-size: 36px;
+    color: white;
+    top: 15%;
+    left: 25%;
+}
+
+.image {
+    position: absolute;
+}
+
+
+/************************************************Footer*************************************/
+
+#footer {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.text-left {
+    color: rgb(136, 136, 136);
+}
+
+.text-right {
+    margin-top: -2%;
+}
+
+
+/*Media Qeuries*/
+
+@media screen and (max-width: 1920px) {
+    .containor::before {
+        width: 2400px;
+        height: 2400px;
+        border-radius: 48%;
+    }
+    .image {
+        width: 38%;
+        margin-left: 4.2%;
+    }
+    .panel h3 {
+        font-size: 48px;
+        margin-left: 0;
+    }
+    .whatsapp-icon img {
+        width: 2.8%;
+        left: 95%;
+        top: 45%;
+    }
+    .insta-icon img {
+        width: 2.8%;
+        left: 95%;
+        top: 51%;
+    }
+    .fb-icon img {
+        width: 2.8%;
+        left: 95%;
+        top: 57%;
+    }
+    .yt-icon img {
+        width: 2.8%;
+        left: 95%;
+        top: 62%;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .containor::before {
+        width: 2000px;
+        height: 2000px;
+        border-radius: 45%;
+    }
+    .image {
+        width: 43%;
+        margin-left: 9%;
+    }
+    .panel h3 {
+        font-size: 42px;
+        margin-left: 0;
+        margin-top: -3%;
+    }
+    .whatsapp-icon img {
+        width: 2.5%;
+        top: 47%;
+    }
+    .insta-icon img {
+        width: 2.5%;
+        top: 54%;
+    }
+    .fb-icon img {
+        width: 2.5%;
+        top: 61%;
+    }
+    .yt-icon img {
+        width: 2.5%;
+        top: 67%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .containor::before {
+        width: 2000px;
+        height: 2000px;
+        border-radius: 45%;
+    }
+    .image {
+        width: 42%;
+        margin-left: 7.5%;
+    }
+    .panel h3 {
+        font-size: 42px;
+        margin-left: 0;
+    }
+    .whatsapp-icon img {
+        width: 2.5%;
+        top: 48%;
+    }
+    .insta-icon img {
+        width: 2.5%;
+        top: 54%;
+    }
+    .fb-icon img {
+        width: 2.5%;
+        top: 60%;
+    }
+    .yt-icon img {
+        width: 2.5%;
+        top: 65%;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .containor::before {
+        width: 1800px;
+        height: 1800px;
+        border-radius: 45%;
+    }
+    .image {
+        width: 42%;
+        margin-left: 8%;
+    }
+    .panel h3 {
+        font-size: 38px;
+        margin-left: -3%;
+    }
+    .whatsapp-icon img {
+        top: 47.5%;
+    }
+    .insta-icon img {
+        top: 54%;
+    }
+    .fb-icon img {
+        top: 60%;
+    }
+    .yt-icon img {
+        top: 66%;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .containor::before {
+        width: 1600px;
+        height: 1600px;
+    }
+    .panel h3 {
+        font-size: 32px;
+        margin-left: -2%;
+    }
+    .image {
+        margin-left: 8%;
+    }
+    .whatsapp-icon img {
+        left: 97%;
+        top: 49%;
+    }
+    .insta-icon img {
+        left: 97%;
+        top: 56%;
+    }
+    .fb-icon img {
+        left: 97%;
+        top: 62%;
+    }
+    .yt-icon img {
+        left: 97%;
+        top: 68%;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .containor {
+        min-height: 800px;
+        height: 100vh;
+    }
+    .containor::before {
+        width: 1500px;
+        height: 1500px;
+        border-radius: 40%;
+        transform: translateX(-50%);
+        left: 30%;
+        bottom: 68%;
+        right: initial;
+        top: initial;
+    }
+    .login {
+        left: 25%;
+    }
+    .image {
+        width: 38%;
+        margin-top: 4%;
+        margin-left: 18%;
+    }
+    .panel h3 {
+        font-size: 32px;
+        margin-top: 32%;
+    }
+    .forms-container {
+        left: 25%;
+    }
+    .panel-container {
+        top: -31%;
+        left: 8%;
+    }
+    .panel {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 36px 8%;
+    }
+    .btn {
+        width: 110px;
+        height: 35px;
+    }
+    .containor .login {
+        top: 5%;
+        transform: translate(-50%, 0);
+    }
+    .whatsapp-icon img {
+        width: 4%;
+        left: 90%;
+        top: 66%;
+    }
+    .insta-icon img {
+        width: 4%;
+        left: 90%;
+        top: 70%;
+    }
+    .fb-icon img {
+        width: 4%;
+        left: 90%;
+        top: 74%;
+    }
+    .yt-icon img {
+        width: 4%;
+        left: 90%;
+        top: 77.5%;
+    }
+    .whatsapp-icon img:hover {
+        width: 5%;
+    }
+    .insta-icon img:hover {
+        width: 5%;
+    }
+    .fb-icon img:hover {
+        width: 5%;
+    }
+    .yt-icon img:hover {
+        width: 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    .image {
+        display: none;
+    }
+    .input-field i {
+        line-height: 55px;
+        font-size: 18px;
+    }
+    .panel {
+        padding: 8px 16px;
+    }
+    .panel h3 {
+        font-size: 24px;
+        margin-left: -12%;
+        margin-top: 80%;
+    }
+    .containor {
+        padding: 24px;
+    }
+    .containor::before {
+        bottom: 72%;
+        left: 50%;
+    }
+    .whatsapp-icon img {
+        width: 8%;
+        left: 90%;
+        top: 70%;
+    }
+    .insta-icon img {
+        width: 8%;
+        left: 90%;
+        top: 75%;
+    }
+    .fb-icon img {
+        width: 8%;
+        left: 90%;
+        top: 80%;
+    }
+    .yt-icon img {
+        width: 8%;
+        left: 90%;
+        top: 84.5%;
+    }
+    .whatsapp-icon img:hover {
+        width: 9%;
+    }
+    .insta-icon img:hover {
+        width: 9%;
+    }
+    .fb-icon img:hover {
+        width: 9%;
+    }
+    .yt-icon img:hover {
+        width: 9%;
+    }
+}

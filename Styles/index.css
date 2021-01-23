@@ -1,0 +1,884 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Yellowtail&display=swap');
+* {
+    margin: 0px;
+    padding: 0pc;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*********************************************************************Navbar******************************************************************/
+
+#nav-bar {
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+
+.current {
+    background-color: rgb(10, 70, 160);
+}
+
+.navbar-nav li {
+    padding: 0px 10px;
+}
+
+.navbar-nav li a {
+    float: right;
+    text-align: left;
+}
+
+#nav-bar ul li a:hover {
+    color: #ffffff!important;
+}
+
+.navbar {
+    background: rgba(250, 250, 250, 0.541);
+}
+
+.navbar-toggler {
+    border: none!important;
+}
+
+.nav-link {
+    color: rgb(236, 225, 225)!important;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+
+/*banner*/
+
+#banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(../images/Index/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+
+/*banner-text*/
+
+.banner-text {
+    text-align: center;
+    color: white;
+    padding-top: 200px;
+}
+
+.banner-text h1 {
+    font-family: 'Yellowtail', cursive;
+    text-align: center;
+    color: white;
+    font-size: 75px;
+}
+
+.banner-text p {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    color: white;
+    font-size: 46px;
+}
+
+
+/*Banner Button*/
+
+.banner-btn {
+    margin: 80px auto 0;
+}
+
+.banner-btn a {
+    width: 240px;
+    font-size: 30px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    border: 0.8px solid white;
+    position: relative;
+    z-index: 1;
+    transition: color 0.6s;
+}
+
+
+/*******************************************************************Carousel******************************************************************
+
+#slider {
+    margin-top: -4%;
+}
+
+.carousel-fixed-item {
+    display: block;
+    position: absolute;
+    left: 15%;
+    top: 40%;
+    z-index: 1;
+}
+
+.carousel-fixed-item h1 {
+    text-align: center;
+    color: white;
+    font-size: 54px;
+}
+
+.carousel-fixed-item p {
+    text-align: center;
+    color: white;
+    font-size: 36px;
+}
+
+
+/******************************************************************icons**********************************************************************/
+
+.icons-bar {
+    display: block;
+    cursor: pointer;
+    width: 10%;
+}
+
+.whatsapp-icon img {
+    position: fixed;
+    z-index: 4;
+    cursor: pointer;
+}
+
+.insta-icon img {
+    position: fixed;
+    z-index: 4;
+    cursor: pointer;
+}
+
+.fb-icon img {
+    position: fixed;
+    z-index: 4;
+    cursor: pointer;
+}
+
+.yt-icon img {
+    position: fixed;
+    z-index: 4;
+    cursor: pointer;
+}
+
+.whatsapp-icon img:hover {
+    width: 3%;
+    transform: translateY(-9px);
+}
+
+.insta-icon img:hover {
+    width: 3%;
+    transform: translateY(-9px);
+}
+
+.fb-icon img:hover {
+    width: 3%;
+    transform: translateY(-9px);
+}
+
+.yt-icon img:hover {
+    width: 3%;
+    transform: translateY(-9px);
+}
+
+
+/*************************************************Services****************************************/
+
+#services {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(../images/Index/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#services h1 {
+    text-align: center;
+    color: #efefef !important;
+    padding-bottom: 10px;
+}
+
+#services h1::after {
+    content: '';
+    background: #efefef;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+
+.services {
+    margin-top: 40px;
+}
+
+.services-img {
+    font-size: 40px;
+    margin: 20px auto;
+    padding: 0;
+    width: 320px;
+    border: 1px solid #fff;
+}
+
+.services-img img {
+    width: 100%;
+}
+
+#services p {
+    font-size: 16px;
+    margin: 20px;
+    color: #ffffff;
+}
+
+#services h3 {
+    color: #ffffff;
+}
+
+.services-section {
+    padding: 60px 0 90px;
+}
+
+.service-item {
+    margin-bottom: 30px;
+}
+
+.why-section h2 {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.service-item p {
+    margin-bottom: 40px;
+}
+
+.spad {
+    padding-top: 102px;
+    padding-bottom: 102px;
+}
+
+
+/********Icon Box*********/
+
+.icon-box-item {
+    margin-bottom: 30px;
+}
+
+.icon-box-item .ib-icon {
+    width: 76px;
+    height: 76px;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 39px;
+    color: #000000;
+    border: 3px solid #000000;
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.icon-box-item .ib-text {
+    overflow: hidden;
+    padding-top: 3px;
+}
+
+.icon-box-item .ib-text h5 {
+    margin-bottom: 15px;
+}
+
+.icon-box-item:hover .ib-icon {
+    background: #000000;
+    color: #fff;
+}
+
+
+/*******************************Team Member's***********************************/
+
+#team {
+    background-color: #efefef;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #777777;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #555555;
+}
+
+#team h1 {
+    text-align: center;
+    color: #555!important;
+    padding-bottom: 10px;
+}
+
+#team h1::after {
+    content: '';
+    background: #007bff;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+
+.profile-pic {
+    margin: 45px;
+}
+
+.profile-pic .img-box {
+    opacity: 1;
+    display: block;
+    position: relative;
+}
+
+.profile-pic .img-box img {
+    filter: grayscale(1);
+    height: 500px;
+    width: 100%;
+}
+
+.profile-pic .img-box img:hover {
+    filter: grayscale(0);
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.profile-pic h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #007bff!important;
+}
+
+.profile-pic h3 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+#team .fa {
+    height: 25px;
+    width: 25px;
+    color: #007bff!important;
+    background: #fff;
+    padding: 4px;
+    border-radius: 50%;
+}
+
+.img-box ul {
+    padding: 15px 0px;
+    position: absolute;
+    z-index: 2;
+    bottom: 120px;
+    left: 59%;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+.img-box ul li {
+    padding: 5px;
+    display: inline-block;
+}
+
+.img-box:hover ul {
+    opacity: 1;
+}
+
+.img-box ul,
+.img-box ul li {
+    transition: 0.5s;
+}
+
+
+/**************************************************Testimonials**************************************/
+
+#testimonials h1 {
+    text-align: center;
+    color: #555!important;
+    padding-bottom: 10px;
+}
+
+#testimonials h1::after {
+    content: '';
+    background: #007bff;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+
+#testimonials {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#testimonials .row {
+    margin-top: 30px;
+}
+
+#testimonials .col-md-4 {
+    margin: 40px auto;
+}
+
+#testimonials .profile {
+    padding: 70px 10px 10px;
+    background-color: #efefef;
+}
+
+.user {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.profile img {
+    top: -120px;
+    position: relative;
+    border: 10px solid #fff;
+}
+
+.profile h3 {
+    font-size: 20px;
+    margin-top: 15px;
+    color: #007bff;
+}
+
+#testimonials span {
+    font-size: 12px;
+    color: #333333;
+}
+
+blockquote {
+    font-size: 19px;
+    line-height: 40px;
+    top: 10px;
+}
+
+blockquote::before {
+    content: '"';
+    font-size: 50px;
+    color: #00b7ff;
+    position: relative;
+    line-height: 20px;
+    line-height: -15px;
+    right: 5px;
+}
+
+blockquote::after {
+    content: ' "';
+    font-size: 50px;
+    color: #00b7ff;
+    position: relative;
+    line-height: 20px;
+    line-height: -15px;
+    right: 5px;
+}
+
+.profile:hover {
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
+/*******************************************************CONTACT************************************/
+
+#contact h1 {
+    text-align: center;
+    color: #555!important;
+    padding-bottom: 10px;
+}
+
+#contact .btn {
+    margin-top: 1.5%;
+}
+
+#contact h1::after {
+    content: '';
+    background: #007bff;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+
+#contact {
+    background-color: #efefef;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #777777;
+}
+
+.contact-form {
+    padding: 15px;
+    margin: 10px;
+}
+
+.form-control {
+    border-radius: 0% !important;
+    border: none;
+}
+
+::placeholder {
+    color: #999!important;
+}
+
+.follow {
+    background: #fff;
+    padding: 10px;
+    margin: 10px;
+}
+
+.contact-info .fa {
+    margin-left: 10px;
+    color: #007bff;
+    font-weight: bold;
+}
+
+
+/********************************************************Media Qeuries***********************************************************************/
+
+@media screen and (max-width: 1920px) {
+    .banner-text h1 {
+        font-size: 116px;
+    }
+    .banner-text p {
+        font-size: 50px;
+    }
+    .banner-btn a {
+        width: 400px;
+        font-size: 45px;
+    }
+    .whatsapp-icon img {
+        width: 2.8%;
+        left: 96%;
+        top: 45%;
+    }
+    .insta-icon img {
+        width: 2.8%;
+        left: 96%;
+        top: 51%;
+    }
+    .fb-icon img {
+        width: 2.8%;
+        left: 96%;
+        top: 57%;
+    }
+    .yt-icon img {
+        width: 2.8%;
+        left: 96%;
+        top: 62.5%;
+    }
+    .services-img {
+        font-size: 60px;
+        margin: 20px auto;
+        width: 475px;
+        border: 2px solid #fff;
+    }
+    .services-img img {
+        width: 100%;
+    }
+    #services p {
+        font-size: 18px;
+    }
+    #services h3 {
+        font-size: 45px;
+    }
+    .profile-pic .img-box img {
+        height: 680px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .banner-text h1 {
+        font-size: 88px;
+    }
+    .banner-text p {
+        font-size: 36px;
+    }
+    .banner-btn a {
+        width: 300px;
+        font-size: 35px;
+    }
+    .whatsapp-icon img {
+        width: 2.5%;
+        top: 47%;
+    }
+    .insta-icon img {
+        width: 2.5%;
+        top: 54%;
+    }
+    .fb-icon img {
+        width: 2.5%;
+        top: 61%;
+    }
+    .yt-icon img {
+        width: 2.5%;
+        top: 67%;
+    }
+    .services-img {
+        width: 365px;
+    }
+    .services-img img {
+        width: 100%;
+    }
+    #services p {
+        font-size: 16px;
+    }
+    #services h3 {
+        font-size: 32px;
+    }
+    .profile-pic .img-box img {
+        height: 550px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .banner-text h1 {
+        font-size: 80px;
+    }
+    .banner-text p {
+        font-size: 32px;
+    }
+    .banner-btn a {
+        width: 250px;
+        font-size: 30px;
+    }
+    .whatsapp-icon img {
+        width: 2.5%;
+        top: 48%;
+    }
+    .insta-icon img {
+        width: 2.5%;
+        top: 54%;
+    }
+    .fb-icon img {
+        width: 2.5%;
+        top: 60%;
+    }
+    .yt-icon img {
+        width: 2.5%;
+        top: 65%;
+    }
+    .services-img {
+        width: 320px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .banner-text h1 {
+        font-size: 68px;
+    }
+    .banner-text p {
+        font-size: 28px;
+    }
+    .banner-btn a {
+        width: 300px;
+        display: block;
+        font-size: 34px;
+        margin: 20px auto;
+    }
+    .whatsapp-icon img {
+        width: 2.8%;
+        top: 47%;
+        left: 94%;
+    }
+    .insta-icon img {
+        width: 2.8%;
+        top: 52%;
+        left: 94%;
+    }
+    .fb-icon img {
+        width: 2.8%;
+        top: 57%;
+        left: 94%;
+    }
+    .yt-icon img {
+        width: 2.8%;
+        top: 61.5%;
+        left: 94%;
+    }
+    .whatsapp-icon img:hover {
+        width: 3%;
+    }
+    .insta-icon img:hover {
+        width: 3%;
+    }
+    .fb-icon img:hover {
+        width: 3%;
+    }
+    .yt-icon img:hover {
+        width: 3%;
+    }
+    .services-img {
+        width: 300px;
+    }
+    .services-img img {
+        width: 100%;
+    }
+    #services p {
+        font-size: 16px;
+    }
+    #services h3 {
+        font-size: 32px;
+    }
+    .profile-pic .img-box img {
+        height: 500px;
+        width: 115%;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .banner-text h1 {
+        font-size: 59px;
+    }
+    .whatsapp-icon img {
+        top: 49%;
+    }
+    .insta-icon img {
+        top: 56%;
+    }
+    .fb-icon img {
+        top: 62%;
+    }
+    .yt-icon img {
+        top: 68%;
+    }
+    .services-img {
+        width: 480px;
+    }
+    .services-img img {
+        width: 100%;
+    }
+    #services p {
+        font-size: 16px;
+    }
+    #services h3 {
+        font-size: 32px;
+    }
+    .profile-pic .img-box img {
+        height: 500px;
+        width: 115%;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .banner-text h1 {
+        font-size: 56px;
+    }
+    .banner-btn a {
+        width: 280px;
+        display: block;
+        margin: 20px auto;
+    }
+    .whatsapp-icon img {
+        width: 4%;
+        top: 40%;
+    }
+    .insta-icon img {
+        width: 4%;
+        top: 44.5%;
+    }
+    .fb-icon img {
+        width: 4%;
+        top: 49%;
+    }
+    .yt-icon img {
+        width: 4%;
+        top: 53%;
+    }
+    .whatsapp-icon img:hover {
+        width: 5%;
+    }
+    .insta-icon img:hover {
+        width: 5%;
+    }
+    .fb-icon img:hover {
+        width: 5%;
+    }
+    .yt-icon img:hover {
+        width: 5%;
+    }
+    .services-img {
+        width: 450px;
+    }
+    .services-img img {
+        width: 100%;
+    }
+    #services p {
+        font-size: 16px;
+    }
+    #services h3 {
+        font-size: 36px;
+    }
+    .profile-pic .img-box img {
+        height: 500px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 540px) {
+    .banner-text h1 {
+        font-size: 45px;
+    }
+    .banner-text p {
+        font-size: 18px;
+    }
+    .banner-btn a {
+        width: 250px;
+    }
+    .whatsapp-icon img {
+        width: 8%;
+        left: 90%;
+        top: 40%;
+    }
+    .insta-icon img {
+        width: 8%;
+        left: 90%;
+        top: 45;
+    }
+    .fb-icon img {
+        width: 8%;
+        left: 90%;
+        top: 49.5%;
+    }
+    .yt-icon img {
+        width: 8%;
+        left: 90%;
+        top: 53.5%;
+    }
+    .whatsapp-icon img:hover {
+        width: 9%;
+    }
+    .insta-icon img:hover {
+        width: 9%;
+    }
+    .fb-icon img:hover {
+        width: 9%;
+    }
+    .yt-icon img:hover {
+        width: 9%;
+    }
+    .services-img {
+        width: 325px;
+    }
+    .services-img img {
+        width: 100%;
+    }
+    #services p {
+        font-size: 16px;
+    }
+    #services h3 {
+        font-size: 36px;
+    }
+}
