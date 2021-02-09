@@ -62,25 +62,25 @@
 
 .whatsapp-icon img {
     position: fixed;
-    z-index: 4;
+    z-index: 5;
     cursor: pointer;
 }
 
 .insta-icon img {
     position: fixed;
-    z-index: 4;
+    z-index: 5;
     cursor: pointer;
 }
 
 .fb-icon img {
     position: fixed;
-    z-index: 4;
+    z-index: 5;
     cursor: pointer;
 }
 
 .yt-icon img {
     position: fixed;
-    z-index: 4;
+    z-index: 5;
     cursor: pointer;
 }
 

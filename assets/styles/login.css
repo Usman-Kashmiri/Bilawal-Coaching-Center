@@ -10,99 +10,6 @@ input {
 }
 
 
-/*********************************************************************Navbar******************************************************************/
-
-#nav-bar {
-    position: sticky;
-    top: 0px;
-    z-index: 10;
-}
-
-.current {
-    background-color: rgb(10, 70, 160);
-}
-
-.navbar-nav li {
-    padding: 0px 10px;
-}
-
-.navbar-nav li a {
-    float: right;
-    text-align: left;
-}
-
-#nav-bar ul li a:hover {
-    color: #ffffff!important;
-}
-
-.navbar {
-    background: rgba(250, 250, 250, 0.541);
-}
-
-.navbar-toggler {
-    border: none!important;
-}
-
-.nav-link {
-    color: rgb(236, 225, 225)!important;
-    font-weight: 600;
-    font-size: 15px;
-}
-
-
-/******************************************************************icons**********************************************************************/
-
-.icons-bar {
-    display: block;
-    cursor: pointer;
-    width: 10%;
-}
-
-.whatsapp-icon img {
-    position: fixed;
-    z-index: 4;
-    cursor: pointer;
-}
-
-.insta-icon img {
-    position: fixed;
-    z-index: 4;
-    cursor: pointer;
-}
-
-.fb-icon img {
-    position: fixed;
-    z-index: 4;
-    cursor: pointer;
-}
-
-.yt-icon img {
-    position: fixed;
-    z-index: 4;
-    cursor: pointer;
-}
-
-.whatsapp-icon img:hover {
-    width: 3%;
-    transform: translateY(-9px);
-}
-
-.insta-icon img:hover {
-    width: 3%;
-    transform: translateY(-9px);
-}
-
-.fb-icon img:hover {
-    width: 3%;
-    transform: translateY(-9px);
-}
-
-.yt-icon img:hover {
-    width: 3%;
-    transform: translateY(-9px);
-}
-
-
 /***************************************************************Login Form*******************************************************/
 
 .containor {
@@ -123,7 +30,7 @@ input {
     top: -10%;
     right: 46%;
     transform: translateY(-50%);
-    z-index: 6;
+    z-index: 3;
 }
 
 .forms-container {
@@ -168,6 +75,7 @@ form {
     display: flex;
     grid-template-columns: 15% 85%;
     padding: 0;
+    overflow: auto;
 }
 
 .input-field i {
@@ -199,7 +107,7 @@ form {
     height: 50px;
     border: none;
     outline: none;
-    border-radius: 50px;
+    border-radius: 50px !important;
     cursor: pointer;
     background-color: rgb(30, 118, 250);
     color: white;
@@ -515,6 +423,9 @@ form {
 @media (max-width: 480px) {
     .image {
         display: none;
+    }
+    .input-field {
+        width: 130%;
     }
     .input-field i {
         line-height: 55px;
