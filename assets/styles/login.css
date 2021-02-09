@@ -342,6 +342,7 @@ form {
         width: 2000px;
         height: 2000px;
         border-radius: 45%;
+        transform: translateY(-50%);
     }
     .image {
         width: 42%;
@@ -371,17 +372,19 @@ form {
 
 @media screen and (max-width: 1080px) {
     .containor::before {
-        width: 1800px;
-        height: 1800px;
-        border-radius: 45%;
+        width: 3500px;
+        height: 3250px;
+        border-radius: 50%;
+        transform: translateY(-38%);
     }
     .image {
         width: 42%;
-        margin-left: 8%;
+        margin-left: 9%;
     }
     .panel h3 {
         font-size: 38px;
         margin-left: -3%;
+        margin-top: 3%;
     }
     .whatsapp-icon img {
         top: 47.5%;
