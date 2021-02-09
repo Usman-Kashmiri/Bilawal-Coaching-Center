@@ -107,17 +107,24 @@
 
 /* Footer */
 
+.footer-heading {
+    position: relative;
+}
+
 .footer-img {
-    max-width: 120px;
+    max-width: 150px;
     opacity: 0.8;
     left: 50%;
-    z-index: 0;
-    position: absolute;
+    z-index: 2;
+    position: relative;
     transform: translate(-50%, -50%);
 }
 
 .footer h3 {
-    padding-top: 0.3%;
+    position: relative;
+    z-index: 3;
+    padding-top: 2%;
+    margin-bottom: -9%;
 }
 
 
@@ -145,7 +152,8 @@
         top: 62.5%;
     }
     .footer-img {
-        margin-top: 0;
+        max-width: 200px;
+        margin: 9% 0 -7% 0;
     }
 }
 
@@ -167,7 +175,7 @@
         top: 67%;
     }
     .footer-img {
-        margin-top: 0.5%;
+        margin: 9% 0 -10% 0;
     }
 }
 
@@ -189,7 +197,7 @@
         top: 65%;
     }
     .footer-img {
-        margin-top: 6%;
+        margin: 9% 0 -11% 0;
     }
 }
 
@@ -228,7 +236,7 @@
     }
     .footer-img {
         max-width: 135px;
-        margin-top: 7.5%;
+        margin: 9% 0 -12% 0;
     }
 }
 
@@ -278,7 +286,7 @@
     }
     .footer-img {
         max-width: 100px;
-        margin-top: 9.5%;
+        margin: 9% 0 -13% 0;
     }
 }
 
@@ -286,22 +294,22 @@
     .whatsapp-icon img {
         width: 8%;
         left: 90%;
-        top: 40%;
+        top: 42%;
     }
     .insta-icon img {
         width: 8%;
         left: 90%;
-        top: 45;
+        top: 47%;
     }
     .fb-icon img {
         width: 8%;
         left: 90%;
-        top: 49.5%;
+        top: 51.5%;
     }
     .yt-icon img {
         width: 8%;
         left: 90%;
-        top: 53.5%;
+        top: 55.5%;
     }
     .whatsapp-icon img:hover {
         width: 9%;
@@ -317,6 +325,6 @@
     }
     .footer-img {
         max-width: 100px;
-        margin-top: 19%;
+        margin: 9% 0 -14% 0;
     }
 }
