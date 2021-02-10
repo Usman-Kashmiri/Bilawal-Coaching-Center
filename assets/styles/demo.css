@@ -12,7 +12,7 @@
     font-size: 72px;
     font-family: sans-serif;
     font-weight: 600;
-    text-align: left;
+    text-align: center;
     margin-bottom: 15%;
 }
 
@@ -37,4 +37,14 @@
 
 .feature-text .readmore:hover {
     color: #1e76fa;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 540px) {
+    .carousel-caption h1 {
+        font-size: 38px;
+        margin-bottom: 0;
+    }
 }
