@@ -5,46 +5,30 @@
     margin: 0;
 }
 
-
-/* Carousel */
-
-.carousel-caption h1 {
-    font-size: 72px;
+.banner-text h2 {
+    text-align: center;
+    font-size: 75px;
     font-family: sans-serif;
     font-weight: 600;
-    text-align: center;
-    margin-bottom: 15%;
-}
-
-
-/* feature-section */
-
-.feature-section {
-    padding: 8%;
-    margin: 0%;
-}
-
-.feature-text h2 {
-    padding: 8% 0 8% 0;
-}
-
-.feature-text .readmore {
-    font-size: 24px;
-    text-decoration: none;
-    font-weight: bold;
-    color: #0a46a0;
-}
-
-.feature-text .readmore:hover {
-    color: #1e76fa;
 }
 
 
 /* Media Queries */
 
-@media screen and (max-width: 540px) {
-    .carousel-caption h1 {
-        font-size: 38px;
-        margin-bottom: 0;
+@media (max-width: 1920px) {
+    .banner-text h2 {
+        font-size: 92px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .banner-text h2 {
+        font-size: 74px;
+    }
+}
+
+@media (max-width: 540px) {
+    .banner-text h2 {
+        font-size: 42px;
     }
 }

@@ -8,7 +8,7 @@
 }
 
 
-/* Primary Color: rgb(10, 70, 160) */
+/* Primary Color: #0a46a0 */
 
 
 /* Secondary Color: #000000 */
@@ -27,7 +27,7 @@
 }
 
 .current {
-    background-color: rgb(10, 70, 160);
+    background-color: #0a46a0;
 }
 
 .navbar-nav li {
