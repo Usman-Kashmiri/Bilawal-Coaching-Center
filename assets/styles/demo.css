@@ -23,3 +23,18 @@
     padding: 8%;
     margin: 0%;
 }
+
+.feature-text h2 {
+    padding: 8% 0 8% 0;
+}
+
+.feature-text .readmore {
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #0a46a0;
+}
+
+.feature-text .readmore:hover {
+    color: #1e76fa;
+}
