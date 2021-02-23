@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    font-size: 60px;
+}
+
+h3 {
+    font-size: 48px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.icons-box {
+    top: 50%;
+    right: 0;
+    position: fixed;
+    text-align: right;
+    z-index: 5;
+}
+
+.social-icon img {
+    cursor: pointer;
+    width: 62%;
+    padding: 6%;
+}
+
+.social-icon img:hover {
+    width: 68%;
+}
+
+#page-top-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0)), url(../images/Demo/img\ 01.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 72px;
+}
+
+.breadcrumb {
+    padding-left: 0;
+    font-size: 24px;
+}
+
+.breadcrumb .active::before {
+    content: "/";
+    color: white !important;
+}
+
+
+/* Blog Section */
+
+#blog-section {
+    padding: 6%;
+}
+
+.blog-img {
+    text-align: center;
+    width: 100%;
+}
+
+.blog-img img {
+    width: 62%;
+}
+
+
+/* padding-bottom and top for image */
+
+.mfp-no-margins img.mfp-img {
+    padding: 0;
+}
+
+
+/* position of shadow behind the image */
+
+.mfp-no-margins .mfp-figure:after {
+    top: 0;
+    bottom: 0;
+}
+
+
+/* padding for main container */
+
+.mfp-no-margins .mfp-container {
+    padding: 0 6% 0 6%;
+}
+
+
+/*
+    for zoom animation 
+    uncomment this part if you haven't added this code anywhere else
+*/
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+    opacity: 0;
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+    opacity: 1;
+}
+
+.mfp-with-zoom.mfp-ready.mfp-bg {
+    opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+    opacity: 0;
+}

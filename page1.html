@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demo | B Licence | Bilawal Coaching Center</title>
+<!--Style Sheets & CDNs-->
+<link rel="stylesheet" href="assets/styles/bootstrap.min.css">
+<link rel="stylesheet" href="assets/styles/main.css">
+<link rel="stylesheet" href="assets/styles/page1.css">
+<!-- Magnific Popup core CSS file -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
+<!-- Bootstrap CDN -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--Favicon-->
+<link rel="shortcut icon" href="assets/images/Icons/favicon.png" type="image/x-icon">
+<!---Font---->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!------------------------------------------------------------------NavBar---------------------------------------------------------------->
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img width="85px" src="assets/images/Index/logo.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-sm-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item current">
+                            <a class="nav-link" href="demo.html">Demo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <div class="icons-box">
+        <section id="block-block-8" class="block block-block clearfix">
+            <div class="social-links container-fluid">
+                <ul>
+                    <li class="social-icon">
+                        <a href="#"><img src="assets/images/Icons/whatsapp.png" alt="Whatsapp"></a>
+                    </li>
+                    <li class="social-icon">
+                        <a href="#"><img src="assets/images/Icons/instagram.png" alt="Instagram"></a>
+                    </li>
+                    <li class="social-icon">
+                        <a href="#"><img src="assets/images/Icons/facebook.png" alt="Facebook"></a>
+                    </li>
+                    <li class="social-icon">
+                        <a href="#"><img src="assets/images/Icons/youtube.png" alt="Youtube"></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <!--------Banner------->
+    <!-- Page top Section -->
+    <section id="page-top-section">
+        <div class="container">
+            <h2 class="text-light">Demo for <span style="color: #0a46a0;">B-License</span></h2>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb bg-transparent">
+                    <li class="breadcrumb-item"><a href="demo.html" class="text-light">Demo</a></li>
+                    <li class="breadcrumb-item active text-light" aria-current="page">Lesson</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+    <!-- Page top Section end -->
+    <!-- Blog Section -->
+    <section id="blog-section">
+        <div class="container">
+            <!-- <div class="row"> -->
+            <div class="col-lg-auto">
+                <h3 class="title text-center">Chater 2, Page 22</h3>
+                <br />
+                <div class="blog-img">
+                    <a class="image-popup-no-margins" href="assets/images/Demo/pg 22.jpg"><img class="rounded img-thumbnail" src="assets/images/Demo/pg 22.jpg" alt="page no. 22"></a>
+                </div>
+                <br />
+                <p>This is the demo lesson for B-License, Chapter 2, and Page 22.</p>
+            </div>
+            <!-- </div> -->
+    </section>
+    <!-- Blog Section End -->
+
+    <!---------------------------------------JavaScript------------------------------------------------>
+    <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!-- Magnific Popup core JS file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <!-- Other CDNs -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js "></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js "></script>
+    <script src="https://kit.fontawesome.com/dbed6b6114.js "></script>
+    <script src="assets/scripts/audio.js "></script>
+    <!-- Custom JS -->
+    <script>
+        $(document).ready(function() {
+            $('.image-popup-no-margins').magnificPopup({
+                type: 'image',
+                closeOnContentClick: false,
+                closeBtnInside: false,
+                fixedContentPos: true,
+                mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+                image: {
+                    verticalFit: false
+                },
+                zoom: {
+                    enabled: true,
+                    duration: 300
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
