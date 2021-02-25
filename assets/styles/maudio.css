@@ -4,6 +4,10 @@ div.maudio .audio {
     display: block;
 }
 
+div.audio-player {
+    width: 100%;
+}
+
 #app {
     display: block;
     position: relative;
@@ -122,21 +126,68 @@ div.maudio .audio-control .volume-pass {
     background: #0a46a0;
 }
 
+@media screen and (max-width: 1920px) {
+    #app {
+        align-items: center;
+    }
+    div.maudio .audio-control {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1620px) {
+    #app {
+        width: 50%;
+    }
+    div.audio-player {
+        width: 100%;
+    }
+    div.maudio .audio-control {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    #app {
+        left: 17%;
+    }
+    div.maudio .audio-control {
+        width: 130%;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    #app {
+        left: 20%;
+    }
+    div.maudio .audio-control {
+        width: 120%;
+        font-size: 10px;
+        padding: 5px;
+    }
+    div.maudio .audio-control .progress-bar {
+        width: 65px;
+        height: 7px;
+    }
+    div.maudio .audio-control .volume-bar {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 540px) {
     #app {
         left: 0%;
     }
     div.maudio .audio-control {
-        width: 100%;
+        width: 200%;
         font-size: 8px;
-        padding: 5px;
+        padding: 4px;
     }
     div.maudio .audio-control .progress-bar {
-        width: 68px;
+        width: 65px;
         height: 7px;
     }
     div.maudio .audio-control .volume-bar {
-        width: 28px;
-        height: 5px;
+        display: none;
     }
 }
