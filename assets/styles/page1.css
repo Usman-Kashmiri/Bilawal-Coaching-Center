@@ -11,28 +11,6 @@ h3 {
     font-size: 48px;
 }
 
-li {
-    list-style-type: none;
-}
-
-.icons-box {
-    top: 50%;
-    right: 0;
-    position: fixed;
-    text-align: right;
-    z-index: 5;
-}
-
-.social-icon img {
-    cursor: pointer;
-    width: 62%;
-    padding: 6%;
-}
-
-.social-icon img:hover {
-    width: 68%;
-}
-
 #page-top-section {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0)), url(../images/Demo/img\ 01.jpg);
     background-size: cover;
