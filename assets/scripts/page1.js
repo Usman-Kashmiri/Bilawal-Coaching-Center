@@ -1,4 +1,3 @@
-// var h = '<audio controls src="./audio-test-01.mp3" autoplay="autoplay"></audio><audio controls src="https://mycugb.com/17ing/music/yc_yixin_yunkaiwusan.mp3"></audio><audio controls src="https://mycugb.com/17ing/music/17ing_20130508.mp3"></audio>'
 var h = '<audio controls src="./assets/audios/Salam Alaikum.mp3"></audio>'
 
 $(document).ready(function() {

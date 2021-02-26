@@ -59,6 +59,10 @@
     text-decoration: none;
 }
 
+.why-section h2 {
+    font-size: 58px;
+}
+
 
 /* Services */
 
@@ -142,8 +146,8 @@
 }
 
 .icon-box-item .ib-icon {
-    width: 76px;
-    height: 76px;
+    width: 60px;
+    height: 60px;
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -151,7 +155,7 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    font-size: 39px;
+    font-size: 34px;
     color: #000000;
     border: 3px solid #000000;
     border-radius: 50%;
@@ -170,7 +174,7 @@
     margin-bottom: 15px;
 }
 
-.icon-box-item:hover .ib-icon {
+.ib-icon:hover {
     background: #000000;
     color: #fff;
 }
@@ -431,6 +435,9 @@ blockquote::after {
         width: 400px;
         font-size: 45px;
     }
+    .why-section h2 {
+        font-size: 66px;
+    }
     .services-img img {
         width: 100%;
     }
@@ -456,6 +463,9 @@ blockquote::after {
     .banner-btn a {
         width: 300px;
         font-size: 35px;
+    }
+    .why-section h2 {
+        font-size: 50px;
     }
     .services-img {
         width: 365px;
@@ -553,6 +563,9 @@ blockquote::after {
         display: block;
         margin: 20px auto;
     }
+    #why-section h2 {
+        font-size: 24px;
+    }
     .services-img {
         width: 450px;
     }
@@ -572,14 +585,21 @@ blockquote::after {
 }
 
 @media (max-width: 540px) {
+    div.banner-text {
+        padding-top: 18%;
+    }
     .banner-text h1 {
-        font-size: 45px;
+        font-size: 42px;
     }
     .banner-text p {
         font-size: 18px;
     }
     .banner-btn a {
-        width: 250px;
+        width: 240px;
+        height: 75px;
+    }
+    .why-section h2 {
+        font-size: 36px;
     }
     .services-img {
         width: 325px;
