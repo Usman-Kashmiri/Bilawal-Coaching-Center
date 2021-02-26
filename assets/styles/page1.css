@@ -3,24 +3,42 @@
     margin: 0;
 }
 
-#page-top-section h2 {
+
+/* #page-top-section h2 {
     font-size: 68px;
-}
+} */
 
 #blog-section h3 {
     font-size: 44px;
 }
 
-#page-top-section {
+.video-frame {
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.lesson-video {
+    width: 560px;
+    height: 280px;
+    border: 3px #0a46a0 solid;
+    border-radius: 25px;
+    display: block;
+    position: relative;
+}
+
+
+/* #page-top-section {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0)), url(../images/Demo/img\ 01.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     padding: 72px;
-}
+} */
 
-.breadcrumb {
+
+/* .breadcrumb {
     padding-left: 0;
     font-size: 24px;
 }
@@ -28,13 +46,13 @@
 .breadcrumb .active::before {
     content: "/";
     color: white !important;
-}
+} */
 
 
 /* Blog Section */
 
 #blog-section {
-    padding: 6%;
+    padding: 0;
 }
 
 .blog-img {
@@ -121,6 +139,10 @@
         padding-left: 4px;
         font-size: 28px;
     }
+    .lesson-video {
+        width: 560px;
+        height: 300px;
+    }
     .blog-img img {
         width: 95%;
     }
@@ -170,6 +192,10 @@
         padding: 64px;
         background-position-x: 62%;
     }
+    .lesson-video {
+        width: 480px;
+        height: 280px;
+    }
     .breadcrumb {
         padding-left: 4px;
         font-size: 18px;
@@ -198,6 +224,10 @@
         padding: 74px;
         background-position-x: 62%;
     }
+    .lesson-video {
+        width: 440px;
+        height: 250px;
+    }
     .breadcrumb {
         padding-left: 4px;
         font-size: 18px;
@@ -219,12 +249,16 @@
         font-size: 46px;
     }
     #blog-section h3 {
-        font-size: 30px;
+        font-size: 26px;
         padding: 4%;
     }
     #page-top-section {
         padding: 56px;
         background-position-x: 75%;
+    }
+    .lesson-video {
+        width: 325px;
+        height: 175px;
     }
     .breadcrumb {
         padding-left: 4px;
