@@ -3,11 +3,6 @@
     margin: 0;
 }
 
-
-/* #page-top-section h2 {
-    font-size: 68px;
-} */
-
 #blog-section h3 {
     font-size: 44px;
 }
@@ -21,32 +16,15 @@
 .lesson-video {
     width: 560px;
     height: 280px;
-    border: 3px #0a46a0 solid;
+    border: 1px #0a46a0 solid;
     border-radius: 25px;
     display: block;
     position: relative;
 }
 
-
-/* #page-top-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0)), url(../images/Demo/img\ 01.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    padding: 72px;
-} */
-
-
-/* .breadcrumb {
-    padding-left: 0;
-    font-size: 24px;
+.lesson-video:hover {
+    box-shadow: 3px 5px 14px #0a46a0;
 }
-
-.breadcrumb .active::before {
-    content: "/";
-    color: white !important;
-} */
 
 
 /* Blog Section */
@@ -58,10 +36,15 @@
 .blog-img {
     text-align: center;
     width: 100%;
+    border-radius: 10px;
 }
 
 .blog-img img {
     width: 62%;
+}
+
+.blog-img img:hover {
+    box-shadow: 3px 6px 12px #0a46a0;
 }
 
 .desc {

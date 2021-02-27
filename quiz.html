@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz | Bilawal Coaching Center</title>
+<!--Style Sheets & CDNs-->
+<link rel="stylesheet" href="assets/styles/bootstrap.min.css">
+<link rel="stylesheet" href="assets/styles/main.css">
+<link rel="stylesheet" href="assets/styles/quiz.css">
+<!-- Bootstrap CDN -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Jquery CDN -->
+<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<!--Favicon-->
+<link rel="shortcut icon" href="assets/images/Icons/favicon.png" type="image/x-icon">
+<!---Font---->
+<link rel="preconnect" href="https://fonts.gstatic.com">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login | Bilawal Coaching Center</title>
-    <!--Style Sheets & CDNs-->
-    <link rel="stylesheet" href="assets/styles/login.css" />
-    <link rel="stylesheet" href="assets/styles/main.css" />
-    <link rel="stylesheet" href="assets/styles/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" /> -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <!--Favicon-->
-    <link rel="shortcut icon" href="assets/images/Icons/favicon.png" type="image/x-icon" />
 </head>
 
 <body>
@@ -21,7 +23,7 @@
     <section id="nav-bar">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img width="85px" src="assets/images/Index/logo.png" /></a>
+                <a class="navbar-brand" href="index.html"><img width="85px" src="assets/images/Index/logo.png"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -33,10 +35,10 @@
                         <li class="nav-item">
                             <a class="nav-link" href="demo.html">Demo</a>
                         </li>
-                        <li class="nav-item current">
+                        <li class="nav-item">
                             <a class="nav-link" href="login.html">Login</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item current">
                             <a class="nav-link" href="quiz.html">Quiz</a>
                         </li>
                         <li class="nav-item">
@@ -69,46 +71,38 @@
             </ul>
         </div>
     </div>
-    <!----------------Login Form-------------------->
-    <div class="containor">
-        <div class="forms-container">
-            <div class="login">
-                <form action="" class="login-form">
-                    <h2 class="title">Login</h2>
-                    <div class="input-field">
-                        <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Username" required />
-                    </div>
-                    <div class="input-field">
-                        <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Password" required />
-                    </div>
-                    <input type="submit" value="Login" class="btn solid" />
-                </form>
-            </div>
+    <!--------Banner------->
+    <!-- Page top Section -->
+    <section id="page-top-section">
+        <div class="container">
+            <h2 class="text-light">Quiz</h2>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb bg-transparent">
+                    <li class="breadcrumb-item"><a href="demo.html" class="text-light">Home</a></li>
+                    <li class="breadcrumb-item active text-light" aria-current="page">Quiz</li>
+                </ol>
+            </nav>
         </div>
-        <div class="panel-container">
-            <div class="panel">
-                <div class="content">
-                    <h3>Login Your Account</h3>
-                </div>
-                <img src="assets/images/SVG/login.svg" class="image" />
-            </div>
-        </div>
-    </div>
+    </section>
+    <!-- Page top Section end -->
 
-    <!---------- Footer Started -------------->
+    <!-- Main -->
+    <section id="main-section">
+        <div class="container p-5">
+            <div class="col-sm-12 msg-box">Quiz will be available soon!</div>
+        </div>
+    </section>
+
+    <!------------------------------------------------- Footer Started ------------------------------------------->
     <footer class="footer bg-dark">
         <div class="container-fluid">
             <div class="footer-heading">
                 <h3 class="text-center text-white">Bilawal Coaching Center</h3>
-                <img src="assets/images/Icons/favicon.png" class="footer-img" />
+                <img src="assets/images/Icons/favicon.png" class="footer-img">
             </div>
             <div class="row">
                 <div class="col">
-                    <p class="text-left text-white">
-                        &#169; All Rights Reserved 2021-22
-                    </p>
+                    <p class="text-left text-white">&#169; All Rights Reserved 2021-22</p>
                 </div>
                 <div class="col">
                     <p class="text-right text-white">Designed By Usman Kashmiri</p>
@@ -116,13 +110,14 @@
             </div>
         </div>
     </footer>
-    <!-------------- Footer Ended ---------------->
+    <!--------------------------------------------------- Footer Ended -------------------------------------------->
 
-    <!-- Script -->
-    <script src="https://kit.fontawesome.com/64d58efce2.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <!---------------------------------------JavaScript------------------------------------------------>
+    <!-- Other CDNs -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js "></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <!-- Script -->
+    <script src="https://kit.fontawesome.com/dbed6b6114.js "></script>
+    <!-- Custom JS -->
 </body>
 
 </html>

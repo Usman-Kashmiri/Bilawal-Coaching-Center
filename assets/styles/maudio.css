@@ -26,6 +26,11 @@ div.maudio .audio-control {
     padding: 10px;
     border: 1px solid #0a46a0;
     border-radius: 25px;
+    cursor: pointer;
+}
+
+div.maudio .audio-control:hover {
+    box-shadow: 0 5px 9px #0a46a0;
 }
 
 div.maudio .audio-control a,
