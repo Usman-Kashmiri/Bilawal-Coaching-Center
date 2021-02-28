@@ -6,7 +6,7 @@
 <!--Style Sheets & CDNs-->
 <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
 <link rel="stylesheet" href="assets/styles/main.css">
-<link rel="stylesheet" href="assets/styles/quiz.css">
+<link rel="stylesheet" href="assets/styles/lesson.css">
 <!-- Bootstrap CDN -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- Jquery CDN -->
@@ -35,13 +35,10 @@
                         <li class="nav-item">
                             <a class="nav-link" href="demo.html">Demo</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="login.html">Login</a>
-                        </li>
-                        <li class="nav-item">
+                        <li class="nav-item current">
                             <a class="nav-link" href="lesson.html">Lessons</a>
                         </li>
-                        <li class="nav-item current">
+                        <li class="nav-item">
                             <a class="nav-link" href="quiz.html">Quiz</a>
                         </li>
                         <li class="nav-item">
@@ -75,26 +72,94 @@
         </div>
     </div>
     <!--------Banner------->
-    <!-- Page top Section -->
-    <section id="page-top-section">
-        <div class="container">
-            <h2 class="text-light">Quiz</h2>
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb bg-transparent">
-                    <li class="breadcrumb-item"><a href="demo.html" class="text-light">Home</a></li>
-                    <li class="breadcrumb-item active text-light" aria-current="page">Quiz</li>
-                </ol>
-            </nav>
-        </div>
-    </section>
-    <!-- Page top Section end -->
+    <main>
+        <!-- Select Boxes -->
+        <div Id="select-boxes">
+            <h2>Select Chapter & Page</h2>
 
-    <!-- Main -->
-    <section id="main-section">
-        <div class="container p-5">
-            <div class="col-sm-12 msg-box">Quiz will be available soon!</div>
+            <div class="select-box bg-dark">
+                <div class="options-container">
+                    <div class="option">
+                        <input type="text" class="text" id="Chapter1" name="category" />
+                        <label for="automobiles">Chapter 1</label>
+                    </div>
+
+                    <div class="option">
+                        <input type="text" class="text" id="film" name="category" />
+                        <label for="film">Chapter 2</label>
+                    </div>
+
+                    <div class="option">
+                        <input type="text" class="text" id="science" name="category" />
+                        <label for="science">Chapter 3</label>
+                    </div>
+
+                    <div class="option">
+                        <input type="text" class="text" id="art" name="category" />
+                        <label for="art">Chapter 4</label>
+                    </div>
+
+                    <div class="option">
+                        <input type="text" class="text" id="music" name="category" />
+                        <label for="music">Chapter 5</label>
+                    </div>
+
+                    <div class="option">
+                        <input type="text" class="text" id="travel" name="category" />
+                        <label for="travel">Chapter 6</label>
+                    </div>
+                </div>
+
+                <div class="selected">
+                    Select Chapter
+                </div>
+            </div>
+            <div class="select-box bg-dark">
+                <div class="options-container">
+                    <div class="option">
+                        <input type="text" class="text" id="Chapter1" name="category" />
+                        <label for="automobiles">Chapter 1</label>
+                    </div>
+
+                    <div class="option">
+                        <input type="text" class="text" id="film" name="category" />
+                        <label for="film">Chapter 2</label>
+                    </div>
+
+                    <div class="option">
+                        <input type="text" class="text" id="science" name="category" />
+                        <label for="science">Chapter 3</label>
+                    </div>
+
+                    <div class="option">
+                        <input type="text" class="text" id="art" name="category" />
+                        <label for="art">Chapter 4</label>
+                    </div>
+
+                    <div class="option">
+                        <input type="text" class="text" id="music" name="category" />
+                        <label for="music">Chapter 5</label>
+                    </div>
+
+                    <div class="option">
+                        <input type="text" class="text" id="travel" name="category" />
+                        <label for="travel">Chapter 6</label>
+                    </div>
+                </div>
+
+                <div class="selected">
+                    Select Page No.
+                </div>
+            </div>
         </div>
-    </section>
+        <!-- Select Boxes -->
+        <!-- Msg box -->
+        <section id="main-section">
+            <div class="container p-5">
+                <div class="col-sm-12 msg-box">Please select a lesson to proceed!</div>
+            </div>
+        </section>
+    </main>
 
     <!------------------------------------------------- Footer Started ------------------------------------------->
     <footer class="footer bg-dark">
@@ -121,6 +186,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/dbed6b6114.js "></script>
     <!-- Custom JS -->
+    <script src="assets/scripts/lesson.js"></script>
 </body>
 
 </html>

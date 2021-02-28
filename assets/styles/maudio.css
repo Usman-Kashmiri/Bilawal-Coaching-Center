@@ -29,7 +29,8 @@ div.maudio .audio-control {
     cursor: pointer;
 }
 
-div.maudio .audio-control:hover {
+div.maudio .audio-control:hover,
+div.maudio .audio-control:focus-within {
     box-shadow: 0 5px 9px #0a46a0;
 }
 

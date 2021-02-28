@@ -1,5 +1,5 @@
 #page-top-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0)), url(../images/Demo/img\ 01.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0)), url(../images/quiz/img\ 01.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -128,7 +128,7 @@
         font-size: 16px;
     }
     .msg-box {
-        padding: 80px;
+        padding: 65px;
         font-size: 15px;
     }
 }
