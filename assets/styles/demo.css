@@ -5,30 +5,90 @@
     margin: 0;
 }
 
-.banner-text h2 {
+#banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(../images/Index/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+
+/* banner-text */
+
+.banner-text {
     text-align: center;
+    color: white;
+    padding-top: 200px;
+}
+
+.banner-text h1 {
+    font-family: 'Yellowtail', cursive;
+    text-align: center;
+    color: white;
     font-size: 75px;
-    font-family: sans-serif;
-    font-weight: 600;
+}
+
+
+/*Banner Button*/
+
+.banner-btns {
+    margin: 30px auto 0;
+}
+
+.banner-btns a {
+    width: 220px;
+    font-size: 30px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 6px;
+    padding: 12px 0;
+    color: white;
+    background-color: #0a46a0;
+    border-radius: 12px;
+    position: relative;
+    z-index: 1;
+    transition: color 0.6s;
+}
+
+.banner-btns a:hover {
+    color: white;
+    box-shadow: 6px 0 14px #51cde9;
+    text-decoration: none;
+}
+
+.banner-btns a:focus {
+    box-shadow: 6px 0 14px #51cde9;
 }
 
 
 /* Media Queries */
 
 @media (max-width: 1920px) {
+    .banner-text {
+        padding-top: 350px;
+    }
+    .banner-text h2 {
+        font-size: 108px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .banner-text {
+        padding-top: 200px;
+    }
     .banner-text h2 {
         font-size: 92px;
     }
 }
 
-@media (max-width: 1440px) {
-    .banner-text h2 {
-        font-size: 74px;
-    }
-}
-
 @media (max-width: 540px) {
     .banner-text h2 {
-        font-size: 42px;
+        font-size: 52px;
+    }
+    .banner-btns a {
+        width: 180px;
+        font-size: 28px;
+        margin-bottom: 20px;
     }
 }

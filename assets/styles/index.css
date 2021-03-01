@@ -14,7 +14,7 @@
 .banner-text {
     text-align: center;
     color: white;
-    padding-top: 200px;
+    padding-top: 10px;
 }
 
 .banner-text h1 {
@@ -31,32 +31,58 @@
     font-size: 46px;
 }
 
+.video-frame {
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.lesson-video {
+    width: 560px;
+    height: 280px;
+    border: 1px #0a46a0 solid;
+    border-radius: 25px;
+    display: block;
+    position: relative;
+}
+
+.lesson-video:hover {
+    box-shadow: 3px 5px 14px #0a46a0;
+}
+
 
 /*Banner Button*/
 
-.banner-btn {
-    margin: 80px auto 0;
+.banner-btns {
+    margin: 20px auto 0;
 }
 
-.banner-btn a {
-    width: 240px;
+.upper-btns {
+    margin-bottom: 16px;
+}
+
+.banner-btns a {
+    width: 220px;
     font-size: 30px;
     text-decoration: none;
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 6px;
     padding: 12px 0;
-    color: rgb(0, 0, 0);
-    background-color: white;
-    border: 0.8px solid white;
+    color: white;
+    background-color: #0a46a0;
+    border-radius: 12px;
     position: relative;
     z-index: 1;
     transition: color 0.6s;
 }
 
-.banner-btn a:hover {
-    color: white;
-    background-color: black;
+.banner-btns a:hover {
+    box-shadow: 6px 0 14px #51cde9;
     text-decoration: none;
+}
+
+.banner-btns a:focus {
+    box-shadow: 6px 0 14px #51cde9;
 }
 
 .why-section h2 {
@@ -425,15 +451,28 @@ blockquote::after {
 /* Media Qeuries */
 
 @media screen and (max-width: 1920px) {
+    #banner {
+        height: 100vh;
+    }
+    .banner-text {
+        padding-top: 100px;
+    }
     .banner-text h1 {
         font-size: 116px;
     }
     .banner-text p {
         font-size: 50px;
     }
-    .banner-btn a {
-        width: 400px;
-        font-size: 45px;
+    .lesson-video {
+        width: 640px;
+        height: 375px;
+    }
+    .banner-btns {
+        margin-top: 50px;
+    }
+    .banner-btns a {
+        width: 280px;
+        font-size: 36px;
     }
     .why-section h2 {
         font-size: 66px;
@@ -454,15 +493,28 @@ blockquote::after {
 }
 
 @media screen and (max-width: 1440px) {
+    #banner {
+        height: 110vh;
+    }
+    .banner-text {
+        padding-top: 16px;
+    }
     .banner-text h1 {
-        font-size: 88px;
+        font-size: 68px;
     }
     .banner-text p {
-        font-size: 36px;
+        font-size: 34px;
     }
-    .banner-btn a {
-        width: 300px;
-        font-size: 35px;
+    .lesson-video {
+        width: 500px;
+        height: 272px;
+    }
+    .banner-btns {
+        margin-top: 20px;
+    }
+    .banner-btns a {
+        width: 240px;
+        font-size: 30px;
     }
     .why-section h2 {
         font-size: 50px;
@@ -486,14 +538,24 @@ blockquote::after {
 }
 
 @media screen and (max-width: 1280px) {
+    #banner {
+        height: auto;
+    }
     .banner-text h1 {
         font-size: 80px;
     }
     .banner-text p {
         font-size: 32px;
     }
-    .banner-btn a {
-        width: 250px;
+    .lesson-video {
+        width: 460px;
+        height: 250px;
+    }
+    .banner-btns {
+        padding-bottom: 30px;
+    }
+    .banner-btns a {
+        width: 200px;
         font-size: 30px;
     }
     .services-img {
@@ -508,11 +570,9 @@ blockquote::after {
     .banner-text p {
         font-size: 28px;
     }
-    .banner-btn a {
-        width: 300px;
-        display: block;
-        font-size: 34px;
-        margin: 20px auto;
+    .banner-btns a {
+        width: 230px;
+        font-size: 32px;
     }
     .services-img {
         width: 300px;
@@ -558,11 +618,6 @@ blockquote::after {
     .banner-text h1 {
         font-size: 56px;
     }
-    .banner-btn a {
-        width: 280px;
-        display: block;
-        margin: 20px auto;
-    }
     #why-section h2 {
         font-size: 24px;
     }
@@ -585,6 +640,9 @@ blockquote::after {
 }
 
 @media (max-width: 540px) {
+    #banner {
+        height: 100vh;
+    }
     div.banner-text {
         padding-top: 18%;
     }
@@ -594,9 +652,21 @@ blockquote::after {
     .banner-text p {
         font-size: 18px;
     }
-    .banner-btn a {
-        width: 240px;
-        height: 75px;
+    .lesson-video {
+        width: 320px;
+        height: 175px;
+    }
+    .upper-btns {
+        margin-bottom: 10px;
+    }
+    .banner-btns {
+        margin-top: 15px;
+    }
+    .banner-btns a {
+        width: 150px;
+        font-size: 22px;
+        margin: 0 3px;
+        padding: 10px 0;
     }
     .why-section h2 {
         font-size: 36px;

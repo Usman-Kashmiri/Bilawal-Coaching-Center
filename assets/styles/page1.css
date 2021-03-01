@@ -36,11 +36,11 @@
 .blog-img {
     text-align: center;
     width: 100%;
-    border-radius: 10px;
 }
 
 .blog-img img {
     width: 62%;
+    border: 1px solid #0a46a0;
 }
 
 .blog-img img:hover {

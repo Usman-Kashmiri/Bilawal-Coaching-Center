@@ -316,7 +316,9 @@ form {
         min-height: 95vh;
     }
     .image {
-        display: none;
+        width: 60%;
+        margin-top: 8%;
+        margin-left: 18%;
     }
     .input-field {
         width: 130%;
@@ -331,8 +333,8 @@ form {
     .panel h3 {
         font-size: 30px;
         margin-left: -18%;
-        margin-top: 66%;
-        margin-bottom: 34%;
+        margin-top: 38%;
+        margin-bottom: 0%;
     }
     .containor {
         padding: 24px;
@@ -341,7 +343,7 @@ form {
         top: 38%;
     }
     .containor::before {
-        bottom: 72%;
+        bottom: 65%;
         left: 50%;
     }
 }
