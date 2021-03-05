@@ -1,10 +1,22 @@
-const selected = document.querySelector(".selected");
-const optionsContainer = document.querySelector(".options-container");
+const selectedAll = document.querySelectorAll(".selected");
 
-const optionsList = document.querySelectorAll(".option");
+selectedAll.forEach((selected) => {
+    const optionsContainer = selected.previousElementSibling;
 
-selected.addEventListener("click", () => {
-    optionsContainer.classList.toggle("active");
+    const optionsList = optionsContainer.querySelectorAll(".option");
+
+    selected.addEventListener("click", () => {
+        if (optionsContainer.classList.contains("active")) {
+            optionsContainer.classList.remove("active");
+        } else {
+            let currentActive = document.querySelector(".options-container.active");
+
+            if (currentActive) {
+                currentActive.classList.remove("active");
+            }
+            optionsContainer.classList.add("active");
+        }
+    });
 });
 
 optionsList.forEach(o => {

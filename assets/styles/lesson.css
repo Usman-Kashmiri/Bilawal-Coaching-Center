@@ -1,5 +1,6 @@
 main {
-    height: 100vh;
+    min-height: 100vh;
+    max-height: auto;
 }
 
 #select-boxes h2 {
@@ -98,6 +99,7 @@ main {
 .msg-box {
     width: 100%;
     height: auto;
+    margin-top: 5%;
     padding: 100px;
     font-size: 24px;
     border-radius: 10px;

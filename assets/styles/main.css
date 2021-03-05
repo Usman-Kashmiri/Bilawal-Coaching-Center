@@ -14,7 +14,7 @@
 /* Secondary Color: #000000 */
 
 
-/* Contrast Color: #ffff */
+/* Contrast Color: #ed1f24 */
 
 
 /* Navbar */
@@ -26,25 +26,29 @@
     color: #000000;
 }
 
+.bg-dark {
+    padding: 0 !important;
+}
+
+.navbar {
+    padding: 0 1%;
+}
+
 .current {
     background-color: #0a46a0;
+    text-decoration: none;
+}
+
+.nav-item {
+    padding: 0 !important;
 }
 
 .navbar-nav li {
     padding: 0px 10px;
 }
 
-.navbar-nav li a {
-    float: right;
-    text-align: left;
-}
-
 #nav-bar ul li a:hover {
     color: #ffffff!important;
-}
-
-.navbar {
-    background: rgba(250, 250, 250, 0.541);
 }
 
 .navbar-toggler {
@@ -52,9 +56,20 @@
 }
 
 .nav-link {
-    color: rgb(236, 225, 225)!important;
-    font-weight: 600;
-    font-size: 15px;
+    color: white !important;
+    font-size: 18px;
+    text-decoration: none;
+    border-bottom: 5px solid transparent;
+    padding: 14px 20px !important;
+    transition: border-bottom 0.3s;
+}
+
+.current a {
+    border-bottom: 5px solid #ed1f24;
+}
+
+.nav-link:hover {
+    border-bottom: 5px solid #ed1f24;
 }
 
 

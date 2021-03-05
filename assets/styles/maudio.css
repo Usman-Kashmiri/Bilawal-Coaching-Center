@@ -8,7 +8,7 @@ div.audio-player {
     width: 100%;
 }
 
-#app {
+.app {
     display: block;
     position: relative;
     left: 25%;
@@ -31,7 +31,7 @@ div.maudio .audio-control {
 
 div.maudio .audio-control:hover,
 div.maudio .audio-control:focus-within {
-    box-shadow: 0 5px 9px #0a46a0;
+    box-shadow: 6px 8px 9px #ed1f24;
     outline: none;
 }
 
@@ -54,7 +54,7 @@ div.maudio .audio-control a {
 
 div.maudio .audio-control a.play {
     border-radius: 50%;
-    background-color: #0a46a0;
+    background-color: #ed1f24;
     background-position: 10px 8px;
 }
 
@@ -96,7 +96,7 @@ div.maudio .audio-control .progress-pass {
     height: 8px;
     margin: 0;
     border-radius: 3px;
-    background: #0a46a0;
+    background: #ed1f24;
 }
 
 div.maudio .audio-control .time-keep {
@@ -131,11 +131,11 @@ div.maudio .audio-control .volume-pass {
     height: 5px;
     margin: 0;
     border-radius: 2px;
-    background: #0a46a0;
+    background: #ed1f24;
 }
 
 @media screen and (max-width: 1920px) {
-    #app {
+    .app {
         align-items: center;
     }
     div.maudio .audio-control {
@@ -144,7 +144,7 @@ div.maudio .audio-control .volume-pass {
 }
 
 @media screen and (max-width: 1620px) {
-    #app {
+    .app {
         width: 50%;
     }
     div.audio-player {
@@ -156,7 +156,7 @@ div.maudio .audio-control .volume-pass {
 }
 
 @media screen and (max-width: 1080px) {
-    #app {
+    .app {
         left: 17%;
     }
     div.maudio .audio-control {
@@ -165,7 +165,7 @@ div.maudio .audio-control .volume-pass {
 }
 
 @media screen and (max-width: 770px) {
-    #app {
+    .app {
         left: 20%;
     }
     div.maudio .audio-control {
@@ -183,7 +183,7 @@ div.maudio .audio-control .volume-pass {
 }
 
 @media screen and (max-width: 540px) {
-    #app {
+    .app {
         left: -2%;
     }
     div.maudio .audio-control {

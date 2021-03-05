@@ -1,4 +1,4 @@
-var h = '<audio controls src="./assets/audios/Salam Alaikum.mp3"></audio>'
+var h = document.getElementById("app");
 
 $(document).ready(function() {
     $('.image-popup-no-margins').magnificPopup({

@@ -47,7 +47,7 @@
 }
 
 .lesson-video:hover {
-    box-shadow: 3px 5px 14px #0a46a0;
+    box-shadow: 9px 5px 14px #ed1f24;
 }
 
 
@@ -73,16 +73,18 @@
     border-radius: 12px;
     position: relative;
     z-index: 1;
-    transition: color 0.6s;
+    transition: 0.4s;
 }
 
 .banner-btns a:hover {
-    box-shadow: 6px 0 14px #51cde9;
+    box-shadow: 5px 7px 14px #ed1f24;
     text-decoration: none;
+    transform: translateY(-4px);
 }
 
 .banner-btns a:focus {
-    box-shadow: 6px 0 14px #51cde9;
+    box-shadow: 5px 7px 14px #ed1f24;
+    transform: translateY(0);
 }
 
 .why-section h2 {
