@@ -70,6 +70,32 @@
 
 .nav-link:hover {
     border-bottom: 5px solid #ed1f24;
+    background-color: #0a46a0;
+}
+
+
+/*  Marquee - Headline  */
+
+.marquee {
+    background-color: #ed1f24;
+    height: 25px;
+    overflow: hidden;
+}
+
+.col-sm-cc {
+    padding: 0 6px 0 24px;
+}
+
+.col-lg-cc {
+    padding: 0 !important;
+}
+
+marquee {
+    width: 110%;
+}
+
+.row-cc {
+    width: 100%;
 }
 
 
@@ -124,6 +150,10 @@ div.social-links {
     margin-bottom: -9%;
 }
 
+.footer p {
+    font-size: 20px;
+}
+
 
 /* Media Qeuries */
 
@@ -140,6 +170,9 @@ div.social-links {
     .footer-img {
         max-width: 200px;
         margin: 9% 0 -7% 0;
+    }
+    .footer p {
+        font-size: 20px;
     }
 }
 
@@ -194,5 +227,8 @@ div.social-links {
     .footer-img {
         max-width: 100px;
         margin: 9% 0 -14% 0;
+    }
+    .footer p {
+        font-size: 11px;
     }
 }

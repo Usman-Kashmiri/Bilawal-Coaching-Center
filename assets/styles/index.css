@@ -127,11 +127,19 @@
     margin: 20px auto;
     padding: 0;
     width: 320px;
-    border: 1px solid #fff;
+    border: 2px solid #0a46a0;
+    overflow: hidden;
 }
 
 .services-img img {
     width: 100%;
+    transform: scale(1);
+    transition: 0.8s;
+}
+
+.services-img img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 #services p {
@@ -321,6 +329,10 @@
     margin: 20px auto 5px;
 }
 
+#testimonials p {
+    font-size: 26px;
+}
+
 #testimonials {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -454,13 +466,13 @@ blockquote::after {
 
 @media screen and (max-width: 1920px) {
     #banner {
-        height: 100vh;
+        height: auto;
     }
     .banner-text {
         padding-top: 100px;
     }
     .banner-text h1 {
-        font-size: 116px;
+        font-size: 108px;
     }
     .banner-text p {
         font-size: 50px;
@@ -471,6 +483,7 @@ blockquote::after {
     }
     .banner-btns {
         margin-top: 50px;
+        padding-bottom: 50px;
     }
     .banner-btns a {
         width: 280px;
@@ -492,11 +505,14 @@ blockquote::after {
         height: 680px;
         width: 90%;
     }
+    .follow {
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width: 1440px) {
     #banner {
-        height: 110vh;
+        height: auto;
     }
     .banner-text {
         padding-top: 16px;
@@ -512,7 +528,8 @@ blockquote::after {
         height: 272px;
     }
     .banner-btns {
-        margin-top: 20px;
+        margin-top: 25px;
+        padding-bottom: 25px;
     }
     .banner-btns a {
         width: 240px;
@@ -540,9 +557,6 @@ blockquote::after {
 }
 
 @media screen and (max-width: 1280px) {
-    #banner {
-        height: auto;
-    }
     .banner-text h1 {
         font-size: 80px;
     }
@@ -576,6 +590,9 @@ blockquote::after {
         width: 230px;
         font-size: 32px;
     }
+    .why-section h2 {
+        font-size: 56px;
+    }
     .services-img {
         width: 300px;
     }
@@ -604,6 +621,9 @@ blockquote::after {
     .services-img img {
         width: 100%;
     }
+    .why-section h2 {
+        font-size: 50px;
+    }
     #services p {
         font-size: 16px;
     }
@@ -620,8 +640,8 @@ blockquote::after {
     .banner-text h1 {
         font-size: 56px;
     }
-    #why-section h2 {
-        font-size: 24px;
+    .why-section h2 {
+        font-size: 45px;
     }
     .services-img {
         width: 450px;
@@ -639,12 +659,12 @@ blockquote::after {
         height: 500px;
         width: 100%;
     }
+    .follow {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 540px) {
-    #banner {
-        height: 100vh;
-    }
     div.banner-text {
         padding-top: 18%;
     }
@@ -671,7 +691,7 @@ blockquote::after {
         padding: 10px 0;
     }
     .why-section h2 {
-        font-size: 36px;
+        font-size: 32px;
     }
     .services-img {
         width: 325px;
@@ -684,5 +704,8 @@ blockquote::after {
     }
     #services h3 {
         font-size: 36px;
+    }
+    .follow {
+        font-size: 14px;
     }
 }
