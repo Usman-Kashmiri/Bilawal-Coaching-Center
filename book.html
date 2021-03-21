@@ -6,15 +6,13 @@
 <!--Style Sheets & CDNs-->
 <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
 <link rel="stylesheet" href="assets/styles/main.css">
-<link rel="stylesheet" href="assets/styles/quiz.css">
-<link rel="stylesheet" href="assets/styles/sweetalert2.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<link rel="stylesheet" href="assets/styles/book.css">
 <!-- Bootstrap CDN -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- Jquery CDN -->
 <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 <!--Favicon-->
-<link rel="shortcut icon" href="assets/images/Icons/favicon.png" type="image/x-icon">
+<link rel="shortcut icon" href="assets/images/icons/favicon.png" type="image/x-icon">
 <!---Font---->
 <link rel="preconnect" href="https://fonts.gstatic.com">
 
@@ -76,43 +74,72 @@
             </ul>
         </div>
     </div>
-    <!--------Banner------->
-    <!-- Page top Section -->
-    <section id="page-top-section">
-        <div class="container-fluid">
-            <h2 class="text-light">Quiz</h2>
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb bg-transparent">
-                    <li class="breadcrumb-item"><a href="demo.html" class="text-light">Home</a></li>
-                    <li class="breadcrumb-item active text-light" aria-current="page">Quiz</li>
-                </ol>
-            </nav>
-        </div>
-    </section>
-    <!-- Page top Section end -->
-
     <!-- Main -->
     <main>
         <section id="main-section">
-            <div class="col-lg-auto">
-                <h2 class="text-center">Select an option to start Quiz:</h2>
-                <div class="full-book-quiz">
-                    <h4>Full Book Quiz</h4>
-                    <button onclick="startquizbtn()" type="button">Start Quiz</button>
-                    <div class="progress-bar">
-                        <div class="progress">75%</div>
+            <div class="quiz-section">
+                <div class="quiz">
+                    <div class="quiz-header">
+                        <div class="quiz-timer">
+                            <span class="time">00:00</span>
+                        </div>
                     </div>
-                    <br>
-                    <p>Attempted 5525 out of 7241 Questions</p>
-                </div>
-                <div class="chap-wise-quiz">
-                    <h4>Chapter Wise Quiz</h4>
-                    <button onclick="startquizbtn()" type="button">Start Quiz</button>
-                    <div class="progress-bar">
-                        <div class="progress">60%</div>
+                    <div class="quiz-body">
+                        <div class="pagination">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div id="questions">
+                            <div class="row">
+                                <div class="q-img">
+                                    <img src="assets/images/quiz/936.png">
+                                </div>
+                                <div class="q-text">
+                                    <h2><span>Q)</span>Langar main machli hogi?</h2>
+                                    <div class="audio">
+                                        <button id="audio"><i class="fa fa-play-circle"></i> Play Audio</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <br>
-                    <p>Attempted 4444 out of 7241 Questions</p>
+                    <div class="quiz-footer">
+                        <h3>Translations:</h3>
+                        <div class="translations-select-box col-sm-6 col-md-5 col-lg-4">
+                            <select class="form-select form-control" name="translations" id="translations">
+                                <option>English</option>
+                                <option>Urdu</option>
+                                <option>Punjabi</option>
+                            </select>
+                        </div>
+                        <div class="true-false">
+                            <button id="true-btn" type="submit">Vero</button>
+                            <button id="false-btn" type="submit">Falso</button>
+                        </div>
+                        <div class="result-btn">
+                            <button type="button">Show Result</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -130,21 +157,21 @@
                     <p class="text-left text-white">&#169; All Rights Reserved 2021-22</p>
                 </div>
                 <div class="col">
-                    <p class="text-right text-white">Designed By <a href="mailto:usmankashmiri378@gmail.com">Usman Kashmiri</a></p>
+                    <p class="text-right text-white">Designed By Usman Kashmiri</p>
                 </div>
             </div>
         </div>
     </footer>
-    <!--------------------------------------------------- Footer Ended -------------------------------------------->
+    <!-------------------------------------- Footer Ended ----------------------------------->
 
-    <!---------------------------------------JavaScript------------------------------------------------>
+    <!--------------------------------------- JavaScript ------------------------------------>
     <!-- Other CDNs -->
     <script src="assets/scripts/jquery-slim.min.js"></script>
     <script src="assets/scripts/bootstrap.min.js"></script>
-    <script src="assets/scripts/sweetalert2.min.js"></script>
     <script src="https://kit.fontawesome.com/dbed6b6114.js "></script>
     <!-- Custom JS -->
-    <script src="assets/scripts/quiz.js"></script>
+    <script src="assets/scripts/book.js"></script>
+    <script src="assets/scripts/timer.js"></script>
 </body>
 
 </html>

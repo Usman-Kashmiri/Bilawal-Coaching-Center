@@ -1,3 +1,13 @@
+main {
+    min-height: auto;
+    max-height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Page-top-section */
+
 #page-top-section {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0)), url(../images/quiz/img\ 01.jpg);
     background-size: cover;
@@ -21,23 +31,98 @@
     color: white !important;
 }
 
+
+/* Page-main-section */
+
 #main-section {
-    height: 100vh;
-    display: flex;
-    align-items: center;
+    padding: 5%;
+    width: 56%;
 }
 
-.msg-box {
-    width: 100%;
-    height: auto;
-    padding: 100px;
-    font-size: 24px;
-    border-radius: 10px;
-    text-align: center;
-    color: #000000 !important;
-    background-color: #f8f8f8;
-    box-shadow: 0 2px 9px #000;
+#main-section h2 {
+    font-size: 40px;
 }
+
+.full-book-quiz,
+.chap-wise-quiz {
+    margin-top: 4%;
+    padding: 4%;
+    position: relative;
+    width: 100%;
+    height: 350px;
+    text-align: center;
+    border: 2px solid #0a46a0;
+    border-radius: 12px;
+}
+
+.full-book-quiz h4,
+.chap-wise-quiz h4 {
+    font-size: 36px;
+}
+
+.full-book-quiz button,
+.chap-wise-quiz button {
+    width: auto;
+    font-size: 32px;
+    padding: 2% 4%;
+    margin-top: 2%;
+    border: none;
+    border-radius: 18px;
+    text-decoration: none;
+    color: white;
+    background-color: #0a46a0;
+    transition: transform 0.5s;
+    outline: none;
+    cursor: pointer;
+}
+
+.full-book-quiz button:hover,
+.chap-wise-quiz button:hover {
+    box-shadow: 5px 7px 14px #ed1f24;
+    text-decoration: none;
+    transform: translateY(-4px);
+}
+
+.full-book-quiz button:focus,
+.chap-wise-quiz button:focus {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+
+/* Progress-bar */
+
+.progress-bar {
+    width: 60%;
+    height: 25px;
+    border-radius: 25px;
+    background-color: rgb(237, 237, 237);
+    margin-top: 8%;
+    margin-left: 23%;
+}
+
+.progress {
+    width: 75%;
+    height: 25px;
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(90deg, #ed1f24, #fd6264);
+    border-radius: 25px;
+}
+
+.full-book-quiz p,
+.chap-wise-quiz p {
+    font-size: 18px;
+}
+
+.chap-wise-quiz .progress {
+    width: 60%;
+}
+
+
+/* Media Queries */
 
 @media screen and (max-width: 1920px) {
     #page-top-section h2 {
@@ -54,6 +139,13 @@
     .breadcrumb {
         padding-left: 4px;
         font-size: 28px;
+    }
+    #main-section {
+        padding: 5%;
+        width: 52%;
+    }
+    #main-section h2 {
+        font-size: 48px;
     }
 }
 
@@ -73,6 +165,21 @@
         padding-left: 6px;
         font-size: 28px;
     }
+    #main-section {
+        width: 54%;
+    }
+    #main-section h2 {
+        font-size: 38px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    #main-section {
+        width: 65%;
+    }
+    #main-section h2 {
+        font-size: 38px;
+    }
 }
 
 @media screen and (max-width: 1080px) {
@@ -90,6 +197,12 @@
     .breadcrumb {
         padding-left: 4px;
         font-size: 18px;
+    }
+    #main-section {
+        width: 75%;
+    }
+    #main-section h2 {
+        font-size: 32px;
     }
 }
 
@@ -109,6 +222,18 @@
         padding-left: 4px;
         font-size: 18px;
     }
+    #main-section {
+        width: 84%;
+    }
+    #main-section h2 {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #main-section h2 {
+        font-size: 26px;
+    }
 }
 
 @media screen and (max-width: 540px) {
@@ -120,15 +245,42 @@
         padding: 4%;
     }
     #page-top-section {
-        padding: 56px;
+        padding: 60px 18px;
         background-position-x: 75%;
     }
     .breadcrumb {
         padding-left: 4px;
         font-size: 16px;
     }
-    .msg-box {
-        padding: 65px;
+    #main-section {
+        padding: 8% 1%;
+        width: 100%;
+    }
+    #main-section h2 {
+        font-size: 30px;
+    }
+    .full-book-quiz p,
+    .chap-wise-quiz p {
         font-size: 15px;
+    }
+    .full-book-quiz,
+    .chap-wise-quiz {
+        height: 240px;
+    }
+    .full-book-quiz h4,
+    .chap-wise-quiz h4 {
+        font-size: 26px;
+    }
+    .progress-bar {
+        width: 88%;
+        height: 22px;
+        margin-left: 6%;
+    }
+    .progress {
+        font-size: 15px;
+    }
+    .full-book-quiz button,
+    .chap-wise-quiz button {
+        font-size: 20px;
     }
 }
