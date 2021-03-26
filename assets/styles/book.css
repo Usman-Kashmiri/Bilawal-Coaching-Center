@@ -184,7 +184,8 @@ div.pagination {
     cursor: pointer;
 }
 
-#true-btn:hover {
+#true-btn:hover,
+#true-btn:focus-within {
     background-color: #28a745;
     color: white;
     box-shadow: none;
@@ -209,7 +210,8 @@ div.pagination {
     cursor: pointer;
 }
 
-#false-btn:hover {
+#false-btn:hover,
+#false-btn:focus-within {
     background-color: #dc3545;
     color: white;
     box-shadow: none;
@@ -321,7 +323,8 @@ div.pagination {
         font-size: 18px;
     }
     #questions img {
-        width: 58%;
+        width: 50%;
+        left: 0;
     }
     .q-text {
         width: 100%;
