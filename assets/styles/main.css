@@ -1,10 +1,13 @@
 /* FONT IMPORT */
 
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&family=Open+Sans:ital,wght@1,800&display=swap');
 * {
     margin: 0px;
     padding: 0pc;
+    font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -15,6 +18,33 @@
 
 
 /* Contrast Color: #ed1f24 */
+
+
+/* Scrool-Bar */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* custom scroll bar */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0a46a0;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0a46a0a3;
+}
 
 
 /* Navbar */

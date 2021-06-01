@@ -18,7 +18,8 @@
 }
 
 .banner-text h1 {
-    font-family: 'Yellowtail', cursive;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: italic;
     text-align: center;
     color: white;
     font-size: 75px;
